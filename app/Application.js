@@ -20,7 +20,7 @@ Ext.define('NotariaApp.Application', {
         // TODO - Launch the application
        
   
-        var host = "http://localhost/futbolAppPhp/";
+        var host = Ext.create("NotariaApp.controller.HostServer").getHost();
         
         Ext.Ajax.request({
             url: host+"php/session/session.php",
