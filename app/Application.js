@@ -21,7 +21,6 @@ Ext.define('NotariaApp.Application', {
        
   
         var host = Ext.create("NotariaApp.controller.HostServer").getHost();
-        
         Ext.Ajax.request({
             url: host+"php/session/session.php",
             success: function(response){
