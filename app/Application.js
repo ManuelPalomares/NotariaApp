@@ -36,19 +36,14 @@ Ext.define('NotariaApp.Application', {
                         title : "Inicio de sesion",
                         resizable: false,
                         closable: false,
-                        items : [{xtype  : "x_loginForm"}],
-                        bbar : [
-                             '->',{
-                            xtype : "button",
-                            id :  "x_login",
-                            text : "Iniciar sesión"
-                        }]
+                        items : [{xtype  : "x_loginForm"}]
+               
                     });
                     win.show();
                     return;
                 }
 
-                Ext.create("NotariaApp.view.Viewport");
+                 Ext.create("NotariaApp.view.main.Viewport");
                 
                 Ext.getCmp("x_labelNombreUsuario").setText(result.nombre);
             },

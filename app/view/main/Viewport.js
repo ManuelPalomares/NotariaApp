@@ -1,4 +1,4 @@
-Ext.define('NotariaApp.view.Viewport', {
+Ext.define('NotariaApp.view.main.Viewport', {
     extend: 'Ext.container.Viewport',
     requires:[
         'Ext.layout.container.Fit',

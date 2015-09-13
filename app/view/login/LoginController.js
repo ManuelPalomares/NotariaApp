@@ -21,7 +21,7 @@ Ext.define('NotariaApp.view.login.LoginController', {
 
                 var win = Ext.getCmp("x_ventanalogin");
                 win.close();
-                Ext.create("NotariaApp.view.Viewport");
+                Ext.create("NotariaApp.view.main.Viewport");
 
             },
             failure: function (form, action) {

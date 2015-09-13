@@ -6,7 +6,7 @@
 Ext.application({
     name: 'NotariaApp',
 
-    extend: 'NotariaApp.Application',
+    extend: 'NotariaApp.Application'
 
    
     // The name of the initial view to create. With the classic toolkit this class

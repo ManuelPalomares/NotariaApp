@@ -3,7 +3,7 @@ Ext.define('NotariaApp.view.login.LoginForm', {
     alias: "widget.x_loginForm",
     id: "x_formLogin",
     requires: [
-        'NotariaApp.view.login.LoginController',
+        'NotariaApp.view.login.LoginController'
     ],
     controller: 'loginController',
     autoScroll: true,
