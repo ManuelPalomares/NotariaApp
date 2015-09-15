@@ -3,13 +3,11 @@ Ext.define('NotariaApp.view.main.Viewport', {
     requires:[
         'Ext.layout.container.Fit',
     ],
-
     layout: {
         type: 'fit'
     },
-
     items: [{
-        xtype: 'panel',
-        html : 'Hola mundo'
+        xtype: 'formularioPrueba'
+
     }]
 });

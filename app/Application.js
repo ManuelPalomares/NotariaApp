@@ -12,7 +12,7 @@ Ext.define('NotariaApp.Application', {
         // TODO: add global / shared stores here
     ],
     
-    views : ['NotariaApp.view.login.LoginForm'],
+    views : ['NotariaApp.view.login.LoginForm','NotariaApp.view.formularios.FormularioPrueba'],
    
     controllers: ['NotariaApp.controller.HostServer'],
     
