@@ -9,10 +9,12 @@ Ext.define('NotariaApp.Application', {
     name: 'NotariaApp',
 
     stores: [
-        // TODO: add global / shared stores here
+        'NotariaApp.store.GrillaStorePrueba'
     ],
     
-    views : ['NotariaApp.view.login.LoginForm','NotariaApp.view.formularios.FormularioPrueba'],
+    views : ['NotariaApp.view.login.LoginForm',
+            'NotariaApp.view.formularios.FormularioPrueba', 
+            'NotariaApp.view.formularios.GrillaPrueba'],
    
     controllers: ['NotariaApp.controller.HostServer'],
     
