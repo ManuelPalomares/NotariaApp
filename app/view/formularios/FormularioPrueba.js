@@ -29,6 +29,22 @@ Ext.define('NotariaApp.view.formularios.FormularioPrueba', {
             anchor: '100%',
             fieldLabel: 'Descirpcion',
             name: 'descripcion'
+        },
+        {
+            xtype: 'datefield',
+            anchor: '100%',
+            fieldLabel: 'Fecha',
+            name: 'fecha',
+            format:'Y-m-d'
+        },
+        {
+            xtype: 'numberfield',
+            anchor: '100%',
+            fieldLabel: 'Valor',
+            name: 'valor'
+        },
+        {
+            xtype:'grillaViewPrueba'
         }
     ],
     dockedItems: [
@@ -42,6 +58,14 @@ Ext.define('NotariaApp.view.formularios.FormularioPrueba', {
                     text: 'Guardar',
                     listeners: {
                         click: 'fnGuardar'
+                    }
+                },
+                {
+                    xtype: 'button',
+                    id: 'x_modificar',
+                    text: 'Modificar',
+                    listeners: {
+                        click: 'fnModificar'
                     }
                 }
             ]
