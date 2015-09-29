@@ -9,10 +9,15 @@ Ext.define('NotariaApp.Application', {
     name: 'NotariaApp',
 
     stores: [
-        // TODO: add global / shared stores here
+        'NotariaApp.store.MenuStore'
     ],
     
-    views : ['NotariaApp.view.login.LoginForm','NotariaApp.view.formularios.FormularioPrueba'],
+    views : ['NotariaApp.view.login.LoginForm',
+        'NotariaApp.view.formularios.FormularioPrueba',
+        'NotariaApp.view.main.Menus',
+        'NotariaApp.view.main.TabContenedorPpal',
+        'NotariaApp.view.formularios.FormularioFactura'
+    ],
    
     controllers: ['NotariaApp.controller.HostServer'],
     
@@ -44,7 +49,7 @@ Ext.define('NotariaApp.Application', {
 
                  Ext.create("NotariaApp.view.main.Viewport");
                 
-                Ext.getCmp("x_labelNombreUsuario").setText(result.nombre);
+                Ext.getCmp("x_labelNombreUsuario").setText("Usuario : "+result.nombre);
             },
             failure: function(response){
                 alert('Error realizando su solicitud por favor comunicar con su administrador :' + response.status);
